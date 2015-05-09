@@ -9,7 +9,7 @@
 
   <name>Cucumber</name>
   <url>http://maven.apache.org</url>
-    <description>General purpose test automation framework for Java. Based on Concordion and Selenium2</description>
+    <description>General purpose test automation framework for Java. Based on Selenium2</description>
 
     <licenses>
         <license>
