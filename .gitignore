@@ -6,7 +6,7 @@ lib
 selenium.log
 selenium.log.*
 config.properties
-chromedriver.log
+test-output
 
 ### Gradle
 *~
@@ -26,7 +26,6 @@ chromedriver.log
 /website/website.iws
 /performanceTest/build
 /subprojects/*/ide
-/*.iml
 /*.ipr
 /*.iws
 /subprojects/*/*.iml
@@ -39,11 +38,9 @@ chromedriver.log
 *.settings
 /bin
 /subprojects/*/bin
-.DS_Store
 /performanceTest/lib
 .textmate
 /incoming-distributions
-.idea
 *.sublime-*
 .nb-gradle
 
@@ -114,11 +111,10 @@ atlassian-ide-plugin.xml
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
-
+ 
 ### Eclipse ###
 *.pydevproject
 .metadata
-.gradle
 bin/
 tmp/
 *.tmp
@@ -152,7 +148,7 @@ local.properties
 
 # TeXlipse plugin
 .texlipse
-
+ 
 ### Maven ###
 pom.xml.tag
 pom.xml.releaseBackup
