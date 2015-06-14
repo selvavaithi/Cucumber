@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src/test/resources/org/sayem/cucumber/feature/"},
-        glue = {"src.main.java.org.sayem.cucumber"},
+        features = {"src/test/resources/org/sayem/cucumber/feature"},
+        glue = {"src.main.java.org.sayem.cucumber.step.definition"},
         plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"},
         snippets = SnippetType.CAMELCASE,
         monochrome = true
