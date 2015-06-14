@@ -1,4 +1,4 @@
-package com.sayem;
+package org.sayem.cucumber;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
