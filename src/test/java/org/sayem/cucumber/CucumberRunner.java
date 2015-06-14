@@ -1,6 +1,7 @@
 package org.sayem.cucumber;
 
 import cucumber.api.CucumberOptions;
+import cucumber.api.SnippetType;
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
@@ -10,7 +11,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"pretty", "json:target/"},
-        features = {"src/test/resources/"}
+        features = {"src/test/resources/org/sayem/cucumber/feature/"},
+        glue = {"src.main.java.org.sayem.cucumber"},
+        plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"},
+        snippets = SnippetType.CAMELCASE,
+        monochrome = true
 )
-public class CucumberRunner {}
+
+public class CucumberRunner {
+}

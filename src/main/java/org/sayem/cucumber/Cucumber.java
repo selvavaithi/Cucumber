@@ -10,18 +10,18 @@ import cucumber.api.java.en.When;
 public class Cucumber {
 
     @Given("^this is my first step$")
-    public void this_is_my_first_step() throws Throwable {
+    public void thisIsMyFirstStep() throws Throwable {
         System.out.println("first step");
     }
 
     @When("^this is my second step$")
-    public void this_is_my_second_step() throws Throwable {
+    public void thisIsMySecondStep() throws Throwable {
         System.out.println("second step");
 
     }
 
     @Then("^this is my final step$")
-    public void this_is_my_final_step() throws Throwable {
+    public void thisIsMyFinalStep() throws Throwable {
         System.out.println("third step");
     }
 }
