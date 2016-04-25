@@ -10,8 +10,9 @@ import org.junit.runner.RunWith;
  */
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = { "src/test/resources/org/sayem/cucumber/feature" }, plugin = { "pretty",
-		"html:target/cucumber", "json:target/cucumber.json" }, snippets = SnippetType.CAMELCASE, monochrome = true)
+@CucumberOptions(features = { "src/test/resources/org/sayem/cucumber/feature" }, glue = {
+		"org.sayem.cucumber.step.definitions" }, plugin = { "pretty", "html:target/cucumber",
+				"json:target/cucumber.json" }, snippets = SnippetType.CAMELCASE, monochrome = true)
 
 public class CucumberRunner {
 }
